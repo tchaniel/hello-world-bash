@@ -10,8 +10,10 @@ if [ ! -f "$FILE" ]; then
 fi
 
 # Output file contents
-echo "Contents of $FILE:"
-cat "$FILE"
+for FILE; do
+    echo "Contents of \033[32;1m$FILE\033[0m:"
+    cat "$FILE"
+done
 
 # Show file info
 echo -e "\nFile info:"
