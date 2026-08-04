@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Usage: viewer.sh <file>
 FILE="$1"
@@ -10,14 +10,6 @@ if [ ! -f "$FILE" ]; then
 fi
 
 # Output file contents
-for FILE; do
-  echo "Contents of $FILE*.sh:"
-  cat "$FILE"
-
-  # Show file info
-  echo -e "\nFile info:"
-  ls -l "$FILE"
-done  
 echo "Contents of $FILE:"
 cat "$FILE"
 
