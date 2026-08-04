@@ -12,7 +12,7 @@ fi
 # Output file contents
 for FILE; do
     echo "Contents of $FILE:"
-    cat "\n$FILE"
+    cat "$FILE"
 done
 
 # Show file info
