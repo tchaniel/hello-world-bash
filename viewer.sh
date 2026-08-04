@@ -9,7 +9,15 @@ if [ ! -f "$FILE" ]; then
   exit 1
 fi
 
-# Output file contents  
+# Output file contents
+for FILE; do
+  echo "Contents of $FILE*.sh:"
+  cat "$FILE"
+
+  # Show file info
+  echo -e "\nFile info:"
+  ls -l "$FILE"
+done  
 echo "Contents of $FILE:"
 cat "$FILE"
 
