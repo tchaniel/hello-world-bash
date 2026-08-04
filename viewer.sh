@@ -11,8 +11,8 @@ fi
 
 # Output file contents
 for FILE; do
-    echo "Contents of \033[32;1m$FILE\033[0m:"
-    cat "$FILE"
+    echo "Contents of $FILE:"
+    cat "\n$FILE"
 done
 
 # Show file info
