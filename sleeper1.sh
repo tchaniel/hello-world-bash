@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-while True;
+while true;
 do
     echo "Hangin out..........."
     sleep 2
